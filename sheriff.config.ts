@@ -16,4 +16,5 @@ export const config: SheriffConfig = {
 
     // add your dependency rules here
   },
+  entryFile: 'apps/sheriff-nx/src/main.ts'
 };
