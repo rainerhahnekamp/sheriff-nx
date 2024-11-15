@@ -34,6 +34,12 @@ module.exports = tseslint.config(
   },
   {
     files: ['**/*.ts'],
+    ignores: ['sheriff.config.ts'],
     extends: [sheriff.configs.all],
   }
+  // Note: proposed eslint config for https://github.com/softarc-consulting/sheriff/issues/165 (given that a new rule, 'checkConfig' was created)
+  // {
+  //   files: ['sheriff.config.ts'],
+  //   extends: [sheriff.configs.checkConfig],
+  // }
 );
